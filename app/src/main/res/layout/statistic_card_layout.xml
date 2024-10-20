@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="wrap_content"
+    android:layout_width="match_parent"
     android:background="@drawable/statistic_card_rectangle"
     android:elevation="16dp">
 
@@ -21,6 +22,8 @@
 
     <!-- TODO Задать высоту и шириину элемента по его содержимому -->
     <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         android:id="@+id/total_balance"
         android:layout_marginVertical="8dp"
         android:text="@string/statistic_card_subtitle"
@@ -32,6 +35,7 @@
 
     <!-- TODO Добавить элементу id со значением sum -->
     <TextView
+        android:id="@+id/sum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginVertical="8dp"

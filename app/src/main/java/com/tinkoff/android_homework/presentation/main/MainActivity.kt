@@ -16,7 +16,7 @@ import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 // TODO добавить наследование от AppCompatActivity
-class MainActivity {
+class MainActivity : AppCompatActivity(){
 
     private val viewModel by viewModels<MainViewModel>()
 
@@ -31,6 +31,7 @@ class MainActivity {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // TODO Добавить выведение лэйаута activity_main на экран
+        setContentView(R.layout.activity_main)
 
         operationsRecyclerView = findViewById(R.id.operations_recycler)
 
